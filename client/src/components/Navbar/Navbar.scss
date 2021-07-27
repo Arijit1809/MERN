@@ -1,0 +1,23 @@
+.nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1% 1%;
+    height:5vh;
+}
+.profile-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:100%;
+
+    img{
+        height:100%;
+        border-radius: 100%;
+    }
+}
+.search-container {
+    display: flex;
+    padding: 10px;
+    height: 70%;
+}

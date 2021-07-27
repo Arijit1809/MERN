@@ -1,0 +1,17 @@
+.openFormBtn {
+    position: fixed;
+    bottom: 20px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    right: 20px;
+    :hover{
+        cursor: pointer;
+    }
+    button{
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size:larger;
+    }
+}

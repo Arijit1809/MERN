@@ -1,0 +1,14 @@
+.post-form {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 10px auto;
+}

@@ -1,0 +1,56 @@
+.sabkapapa{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+.post-container{
+    position: relative;
+}
+.img-overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    aspect-ratio: 1.5/1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.creator-container{
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 10px;
+}
+.media {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dots{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    :hover{
+        cursor: pointer;
+    }
+}
+.like-del-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: large;
+        display: flex;
+        align-items: center;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
