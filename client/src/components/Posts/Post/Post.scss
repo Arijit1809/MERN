@@ -1,32 +1,31 @@
-.sabkapapa{
-    height:500px;
+.post-container-master{
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
+    background-color: #242526;
     justify-content: space-between;
     padding: 10px;
+    margin-bottom:20px;
     border-radius: 5px;
-    overflow: auto;
 }
 .post-container{
     position: relative;
 }
-.img-overlay{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    aspect-ratio: 1.5/1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+// .img-overlay{
+//     position: absolute;
+//     width: 100%;
+//     top: 0;
+//     aspect-ratio: 1.5/1;
+//     background-color: rgba(0, 0, 0, 0.5);
+// }
 .creator-container{
-    position: absolute;
-    top: 0;
+    // position: absolute;
+    // top: 0;
     color: white;
-    padding: 10px;
+    // padding: 10px;
 }
 .media {
     width: 100%;
-    aspect-ratio: 1.5/1;
+    // aspect-ratio: 1.5/1;
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -39,6 +38,12 @@
         cursor: pointer;
     }
 }
+.post-title{
+    color: #fff;
+}
+.post-message{
+    color: #fff;
+}
 .like-del-container{
     display: flex;
     justify-content: space-evenly;
@@ -49,6 +54,7 @@
         font-size: large;
         display: flex;
         align-items: center;
+        color: #fff;
     }
     button:hover{
         cursor: pointer;

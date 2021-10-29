@@ -44,8 +44,8 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      <Link to="/">
-        <h2>PostIT</h2>
+      <Link to="/" style={{ textDecoration: 'none' , color: 'white' }}>
+        <h2>Postzilla</h2>
       </Link>
       <div className="search-container">
         <input onKeyDown={handleKeyPress} value={search} onChange={(e) => setSearch(e.target.value)} />

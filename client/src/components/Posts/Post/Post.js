@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 import { likePost, deletePost } from '../../../actions/posts';
 import './Post.scss'
 
-const Post = ({ post, setCurrentId }) => {
+const Post = ({ post, setCurrentId, id }) => {
   const user = JSON.parse(localStorage.getItem('profile'));
   const [likes, setLikes] = useState(post?.likes);
   const dispatch = useDispatch();
@@ -46,7 +46,7 @@ const Post = ({ post, setCurrentId }) => {
   };
 
   return (
-    <div className="sabkapapa">
+    <div id={id} className="post-container-master">
       <div
         className="post-container"
         onClick={openPost}
@@ -73,12 +73,13 @@ const Post = ({ post, setCurrentId }) => {
           </button>
         </div>
         )}
+        {/* Post Content - Textual */}
         <div>
           <p>{post.tags.map((tag) => `#${tag} `)}</p>
         </div>
-        <h4>{post.title}</h4>
+        <h4 className="post-title">{post.title}</h4>
         <div>
-          <p>{post.message.split(' ').splice(0, 20).join(' ')}...</p>
+          <p className="post-message">{post.message.split(' ').splice(0, 20).join(' ')}...</p>
         </div>
       </div>
       <div className="like-del-container">

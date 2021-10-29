@@ -1,14 +1,75 @@
+.post-form-login{
+    position: sticky;
+    top: 0;
+}
+.blur{
+    filter: blur(5px);
+}
+.signup-msg{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    text-align: center;
+}
 .post-form {
-    position: fixed;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    color: #fff;
+    position: sticky;
+    top: 0;
 }
 .form-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    background-color: blueviolet;
+    border-radius: 5px;
+    background-color: #242526;
     padding: 20px;
-    margin: 10px auto;
+    // margin: 2% 35%;
+    // margin:0% 10%;
 }
+
+.title, .message{
+    background-color: #4E4F50;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+}
+.choose_file{
+    margin:auto;
+    button{
+        border: none;
+        padding: 10px;
+        background-color: #4E4F50;
+        border-radius: 10px;
+        color: #fff;
+    }
+    input{
+        display: none !important;
+    }
+}
+.submit-btn-cnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    margin: 10px 0;
+    width: 100%;
+    button{
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    button:first-child{
+        background-color: rgb(6, 197, 6);
+    }
+    button:nth-child(2){
+        background-color: rgb(255, 0, 0);
+    }
+}
+

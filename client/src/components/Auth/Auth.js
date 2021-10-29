@@ -52,7 +52,7 @@ const SignUp = () => {
     }
   };
 
-  const googleError = () => console.log('Google Sign In was unsuccessful. Try again later');
+  const googleError = (e) => console.log(e.details);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -80,6 +80,7 @@ const SignUp = () => {
           </Button>
           <GoogleLogin
             clientId="548308140796-dmmbeq4frql6oos0cldh6aijc1p0e41n.apps.googleusercontent.com"
+            // clientID = {process.env.REACT_APP_GOOGLE_API}
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
                 Google Sign In

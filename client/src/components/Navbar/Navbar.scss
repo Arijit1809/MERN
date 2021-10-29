@@ -2,8 +2,13 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin:1% 1%;
-    height:5vh;
+    padding: 10px;
+    height: 70px;
+    background-color: #242526;
+    margin-bottom: 20px;
+    position: absolute;
+    top:0;
+    width: 100%;
 }
 .profile-container{
     display:flex;
@@ -15,9 +20,15 @@
         height:100%;
         border-radius: 100%;
     }
+
+    h2{
+        color: #ffffff;
+        margin: 0 10px;
+    }
 }
 .search-container {
     display: flex;
-    padding: 10px;
-    height: 70%;
+    // padding: 10px;
+    // height: 70%;
+    
 }

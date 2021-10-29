@@ -3,7 +3,9 @@ import { useLocation } from 'react-router-dom';
 import Posts from '../Posts/Posts';
 import Form from '../Form/Form';
 import Pagination from '../Pagination';
-import OpenForm from '../OpenForm/OpenForm';
+import OtherPosts from '../OtherPosts/OtherPosts';
+
+import './home.scss'
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -14,26 +16,27 @@ const Home = () => {
   const searchQuery = query.get('searchQuery');
   const [currentId, setCurrentId] = useState(0);
   const [tags, setTags] = useState([]);
-  const [formOpen,setFormOpen] = useState(false);
-
-  const openForm = ()=>{
-    setFormOpen(true);
-  }
-
-  const closeForm = ()=>{
-    setFormOpen(false);
-  }
 
   return (
-    <div>
-      <Posts setCurrentId={setCurrentId} />
-      <OpenForm onClick={openForm}/>
-      <Form show={formOpen} closeForm={closeForm} currentId={currentId} setCurrentId={setCurrentId} />
-      {(!searchQuery && !tags.length) && (
-        <div>
-          <Pagination page={page} />
+    <div className="home">
+      <div className="form-post-container">
+      <div className="home-grid-item">
+          <OtherPosts>
+          {(!searchQuery && !tags.length) && (
+            <div className="pagination-home">
+              <Pagination page={page} />
+            </div>
+          )}
+          </OtherPosts>
         </div>
-      )}
+        <div className="home-grid-item">
+          <Posts setCurrentId={setCurrentId} />
+        </div>
+        
+        <div className="home-grid-item">
+          <Form currentId={currentId} setCurrentId={setCurrentId} />
+        </div>
+      </div>
     </div>
   );
 };
