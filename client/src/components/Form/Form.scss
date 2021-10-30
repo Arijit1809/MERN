@@ -8,6 +8,7 @@
 .signup-msg{
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 2;
     height:100%;
     width:100%;
@@ -67,9 +68,11 @@
     }
     button:first-child{
         background-color: rgb(6, 197, 6);
+        padding: 10px 0;
     }
     button:nth-child(2){
         background-color: rgb(255, 0, 0);
+        padding: 10px 0;
     }
 }
 

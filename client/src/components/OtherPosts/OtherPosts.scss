@@ -30,23 +30,14 @@
         display: flex;
         padding: 10px;
         font-size:small;
-
-        span:first-child {
-            margin-right: 20px;
-            background-color: red;
-            width: 20%;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 5px;
-            padding: 10px;
-            width: 50px;
-        }
-
-        span:last-child {
-            background-color: #4E4F50;
+        span{
+            background-color: #ffd000;
+            color: black;
             width:100%;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
+            font-size:medium;
+            font-weight: 500;
         }
     }
 }

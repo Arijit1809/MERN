@@ -10,18 +10,10 @@
 .post-container{
     position: relative;
 }
-// .img-overlay{
-//     position: absolute;
-//     width: 100%;
-//     top: 0;
-//     aspect-ratio: 1.5/1;
-//     background-color: rgba(0, 0, 0, 0.5);
-// }
 .creator-container{
-    // position: absolute;
-    // top: 0;
-    color: white;
-    // padding: 10px;
+    color: rgb(129, 129, 129);
+    margin: 10px 0;
+    font-size: small;
 }
 .media {
     width: 100%;
@@ -37,11 +29,13 @@
     :hover{
         cursor: pointer;
     }
+    button{
+        background-color:transparent;
+        border: none;
+    }
 }
-.post-title{
-    color: #fff;
-}
-.post-message{
+.post-title, .post-message{
+    margin-top:10px;
     color: #fff;
 }
 .like-del-container{

@@ -56,10 +56,7 @@ const Post = ({ post, setCurrentId, id }) => {
         <div className="img-overlay"/>
         </div>
         {/*name and time overlay over the image*/}
-        <div className="creator-container">
-          <h3>{post.name}</h3>
-          <h3>{moment(post.createdAt).fromNow()}</h3>
-        </div>
+        
         {(user?.result?.googleId === post?.creator || user?.result?._id === post?.creator) && (
           //three dots to edit
         <div className="dots">
@@ -77,9 +74,13 @@ const Post = ({ post, setCurrentId, id }) => {
         <div>
           <p>{post.tags.map((tag) => `#${tag} `)}</p>
         </div>
-        <h4 className="post-title">{post.title}</h4>
+        <h1 className="post-title">{post.title}</h1>
         <div>
           <p className="post-message">{post.message.split(' ').splice(0, 20).join(' ')}...</p>
+        </div>
+        <div className="creator-container">
+          <span>{post.name} </span>
+          <span>{moment(post.createdAt).fromNow()}</span>
         </div>
       </div>
       <div className="like-del-container">

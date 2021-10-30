@@ -23,14 +23,14 @@ const CommentSection = ({ post }) => {
   return (
     <div style={{color: 'white'}}>
       <div>
-        <div>
+        <div className="comment">
           <input placeholder="Write a comment..." value={comment} onChange={(e) => setComment(e.target.value)} />
           <button onClick={handleComment}>
             Comment
           </button>
         </div>
         <div>
-          <h1>Comments</h1>
+          <h1 style={{margin:'10px 0'}}>Comments</h1>
           {comments?.map((comment, i) => {
             return (
               <CommentBubble comment={comment} key={i}/>

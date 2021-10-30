@@ -10,8 +10,7 @@ export default function OtherPosts({children}){
                 return(
                     <a className="post-ref" href={`#${index+1}`} key={index}>
                         <div>
-                            <span>{index+1}</span>
-                            <span>{title} written by {name}</span> 
+                            <span>{title} by {name}</span> 
                         </div>
                     </a>
                 )

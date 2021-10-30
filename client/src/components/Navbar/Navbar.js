@@ -53,12 +53,12 @@ const Navbar = () => {
       </div>
       {user?.result ? (
         <div className="profile-container">
-          <img alt={user?.result.name} src={user?.result.imageUrl}></img>
+          <img alt="" src={user?.result.imageUrl}></img>
           <h2>{user?.result.name}</h2>
           <button onClick={logout}>Logout</button>
         </div>
       ) : (
-        <button onClick={() => { history.push("/auth") }}>Sign In</button>
+        <button className="btn-green" onClick={() => { history.push("/auth") }}>Sign In</button>
       )}
     </div>
   );
